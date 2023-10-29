@@ -10,7 +10,7 @@ import DetailCategory from '../components/user/categories/detail';
 import ProductsList from '../components/user/products/list';
 import DetailProduct from '../components/user/products/detail';
 import Cart from '../components/user/pages/cart';
-import MyAccount from '../components/user/pages/myAccount';
+import ListOrders from '../components/user/orders/list';
 import DetailOrder from '../components/user/orders/detail';
 
 function IndexRoutes() {
@@ -25,8 +25,8 @@ function IndexRoutes() {
             <Route path="/register" element={<Register />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/my-account" element={<MyAccount />} />
-            <Route path="/my-account/orders/:id" element={<DetailOrder />} />
+            <Route path="/orders" element={<ListOrders />} />
+            <Route path="/orders/:id" element={<DetailOrder />} />
         </Routes>
     );
 }

@@ -56,8 +56,8 @@ const Navbar = () => {
               </div>
             ) : (
               <div className="d-flex align-items-center">
-                <a className="nav-link" href="/my-account">
-                  <i className="bi bi-person"></i> My Account
+                <a className="nav-link" href="/orders">
+                  <i className="bi bi-person"></i> My Order
                 </a>
                 <a className="nav-link" onClick={handleCart}>
                   <i className="bi bi-cart"></i> Cart
